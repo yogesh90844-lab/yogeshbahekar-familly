@@ -121,4 +121,29 @@ footer {
 <input type="file"
 style="padding:10px;
 background-color:lightyellow;">
-   
+<!DOCTYPE html>
+<html>
+<head><title>Image Upload</title>
+<style>
+body {text-aligh: center;
+font-family: Arial;}
+    img{ width:200px
+        margin-top: 20px;}
+    </style>
+</head>
+    <body>
+        <h2>upload Image</h2>
+        <input type="File" accept="image/*"
+            onchange="showImage(event)">
+        <br>
+        <img id="preview">
+        <script>
+            function showImage(event) {
+                var image =
+                    document.getElementById("preview");
+                image.src =
+                    URL.createObjectURL(event.target.files
+                                        [O];}
+        </script>
+    </body>
+</html>
